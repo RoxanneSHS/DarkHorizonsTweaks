@@ -1,0 +1,32 @@
+BACKUP ~DH_Tweaks/backup~
+AUTHOR ~Roxanne@baldursextendedworld.com~
+
+VERSION ~v1~
+
+BEGIN ~Dark Horizons Balancing for EE~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cm0750.are~ THEN BEGIN
+  FAIL  ~Dark Horizons mod must be installed first~
+END
+
+//Area graphic + item fixes
+COPY ~DH_Tweaks/Tis~ ~Override~
+
+//Tristan + Isolde delay
+EXTEND_TOP ~cmtrisd.bcs~ ~DH_Tweaks/Tweaks/CMtrisd.baf~
+
+//Move mine duergars
+EXTEND_TOP ~cmdurg.bcs~ ~DH_Tweaks/Tweaks/CMDurg.baf~
+
+//Less Section loot
+COPY ~DH_Tweaks/Tweaks/CMSEC01.CRE~ ~override~
+  SAY NAME1 ~Paul Wolfe~
+  SAY NAME2 ~Paul Wolfe~
+COPY ~DH_Tweaks/Tweaks/CMSEC03.CRE~ ~override~
+  SAY NAME1 ~Madeline~
+  SAY NAME2 ~Madeline~
+COPY ~DH_Tweaks/Tweaks/CMSEC04.CRE~ ~override~
+  SAY NAME1 ~Michael Samuelle~
+  SAY NAME2 ~Michael Samuelle~
+COPY ~DH_Tweaks/Tweaks/CMSEC07.CRE~ ~override~
+  SAY NAME1 ~Andrea~
+  SAY NAME2 ~Andrea~

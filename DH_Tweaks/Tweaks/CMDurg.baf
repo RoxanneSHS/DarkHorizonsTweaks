@@ -1,0 +1,44 @@
+IF
+Global("MineMove","Locals",0)
+Name("magorken",Myself)
+THEN
+RESPONSE #100
+SetGlobal("MineMove","Locals",1)
+JumpToPoint([3000.940])
+END
+
+IF
+Global("MineMove","Locals",0)
+Name("mduergar",Myself)
+THEN
+RESPONSE #100
+SetGlobal("MineMove","Locals",1)
+JumpToPoint([3129.960])
+END
+
+IF
+Global("MineMove","Locals",0)
+Name("mtduergar",Myself)
+THEN
+RESPONSE #100
+SetGlobal("MineMove","Locals",1)
+JumpToPoint([3329.963])
+END
+
+IF
+Global("MineMove","Locals",0)
+Name("ma2duergar",Myself)
+THEN
+RESPONSE #100
+SetGlobal("MineMove","Locals",1)
+JumpToPoint([2814.758])
+END
+
+IF
+Global("MineMove","Locals",0)
+Name("mc1duergar",Myself)
+THEN
+RESPONSE #100
+SetGlobal("MineMove","Locals",1)
+JumpToPoint([2949.813])
+END
