@@ -30,3 +30,8 @@ COPY ~DH_Tweaks/Tweaks/CMSEC04.CRE~ ~override~
 COPY ~DH_Tweaks/Tweaks/CMSEC07.CRE~ ~override~
   SAY NAME1 ~Andrea~
   SAY NAME2 ~Andrea~
+
+// Ferthgil gives hammer
+ACTION_IF FILE_EXISTS_IN_GAME ~dsferth.cre~ THEN BEGIN
+COMPILE ~DH_Tweaks/Tweaks/Ferthg.d~
+END
