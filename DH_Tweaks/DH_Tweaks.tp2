@@ -1,11 +1,16 @@
 BACKUP ~DH_Tweaks/backup~
 AUTHOR ~Roxanne@baldursextendedworld.com~
 
-VERSION ~v1~
+AUTO_TRA ~DH_Tweaks/TRA/%s~
 
-BEGIN ~Dark Horizons Balancing for EE~
+VERSION ~v1.1~
+
+LANGUAGE ~English~ ~english~ ~DH_Tweaks/TRA/English/setup.tra~
+LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~DH_Tweaks/TRA/Russian/setup.tra~
+
+BEGIN @1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cm0750.are~ THEN BEGIN
-  FAIL  ~Dark Horizons mod must be installed first~
+  FAIL  @2
 END
 
 //Area graphic + item fixes
@@ -19,17 +24,17 @@ EXTEND_TOP ~cmdurg.bcs~ ~DH_Tweaks/Tweaks/CMDurg.baf~
 
 //Less Section loot
 COPY ~DH_Tweaks/Tweaks/CMSEC01.CRE~ ~override~
-  SAY NAME1 ~Paul Wolfe~
-  SAY NAME2 ~Paul Wolfe~
+  SAY NAME1 @3
+  SAY NAME2 @3
 COPY ~DH_Tweaks/Tweaks/CMSEC03.CRE~ ~override~
-  SAY NAME1 ~Madeline~
-  SAY NAME2 ~Madeline~
+  SAY NAME1 @4
+  SAY NAME2 @4
 COPY ~DH_Tweaks/Tweaks/CMSEC04.CRE~ ~override~
-  SAY NAME1 ~Michael Samuelle~
-  SAY NAME2 ~Michael Samuelle~
+  SAY NAME1 @5
+  SAY NAME2 @5
 COPY ~DH_Tweaks/Tweaks/CMSEC07.CRE~ ~override~
-  SAY NAME1 ~Andrea~
-  SAY NAME2 ~Andrea~
+  SAY NAME1 @6
+  SAY NAME2 @6
 
 // Ferthgil gives hammer
 ACTION_IF FILE_EXISTS_IN_GAME ~dsferth.cre~ THEN BEGIN
