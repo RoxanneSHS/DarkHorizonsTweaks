@@ -3,10 +3,11 @@ AUTHOR ~Roxanne@baldursextendedworld.com~
 
 AUTO_TRA ~DH_Tweaks/TRA/%s~
 
-VERSION ~v1.1~
+VERSION ~v1.2~
 
 LANGUAGE ~English~ ~english~ ~DH_Tweaks/TRA/English/setup.tra~
 LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~DH_Tweaks/TRA/Russian/setup.tra~
+LANGUAGE ~Deutsch~ ~german~ ~DH_Tweaks/TRA/german/setup.tra~
 
 BEGIN @1
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cm0750.are~ THEN BEGIN
